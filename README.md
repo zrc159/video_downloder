@@ -52,19 +52,11 @@ pip install yt-dlp customtkinter
 > pip install -U yt-dlp
 > ```
 
-### 2. 安装 ffmpeg
+### 2. ffmpeg（已内置，无需下载）
 
-项目目录下需要 `ffmpeg.exe` 和 `ffprobe.exe`。推荐从国内镜像下载静态版（不依赖 dll，解压即用）：
+项目已内置 `ffmpeg.exe` 和 `ffprobe.exe`（静态版，不依赖 dll），克隆仓库即可直接使用。
 
-```bash
-# Windows（静态版，走阿里云 npmmirror 镜像，国内速度快）
-curl -sL -o ffmpeg.gz "https://registry.npmmirror.com/-/binary/ffmpeg-static/b6.1.1/ffmpeg-win32-x64.gz"
-curl -sL -o ffprobe.gz "https://registry.npmmirror.com/-/binary/ffmpeg-static/b6.1.1/ffprobe-win32-x64.gz"
-gunzip -f ffmpeg.gz && mv ffmpeg ffmpeg.exe
-gunzip -f ffprobe.gz && mv ffprobe ffprobe.exe
-```
-
-> 也可以去 [ffmpeg.org](https://ffmpeg.org/download.html) 或 [gyan.dev](https://www.gyan.dev/ffmpeg/builds/) 下载，把 `ffmpeg.exe`、`ffprobe.exe` 放到项目目录即可。
+> 如需更新 ffmpeg，可从 [gyan.dev](https://www.gyan.dev/ffmpeg/builds/) 或国内镜像下载静态版，替换同名文件即可。
 
 ### 3. 运行
 
