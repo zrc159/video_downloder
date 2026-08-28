@@ -1,0 +1,30 @@
+# ffmpeg 二进制（太大，需按 README 自行下载）
+ffmpeg.exe
+ffprobe.exe
+
+# 用户配置（含代理信息）
+config.json
+
+# 下载的视频文件
+*.mp4
+*.webm
+*.m4a
+*.mkv
+*.mov
+
+# Python 缓存
+__pycache__/
+*.pyc
+
+# PyInstaller 构建产物
+build/
+dist/
+*.spec
+
+# 压缩包（打包产物等大文件）
+*.rar
+*.zip
+
+# 其他
+.DS_Store
+.claude/
